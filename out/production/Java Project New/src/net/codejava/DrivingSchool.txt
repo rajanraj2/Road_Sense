@@ -1,0 +1,126 @@
+"<html>Visit the website parivahan.gov.in<br>"+
+"Select the “Online Services” tab and click on the “Driving Licence Related Services” option.<br>"+
+"Select the state from which you wish to apply.<br>"+
+"Click on the “Apply for Driving Licence” option.<br>"+
+"Complete the applicant details.<br>"+
+"Upload scanned copies of the necessary documents.<br>"+
+"Pay the application fee.<br>"+
+"You can also apply for a driving license through offline mode by visiting your nearest<br>"+ "Regional Transport Office (RTO) and submitting the required documentation.</html>"
+
+
+"<html>Stay alert and actively pay attention to your actions and those of the drivers around you when you are driving.<br>"+
+Avoid making assumptions about what other drivers are going to do.<br>"+
+Always use your turn signals in advance of making a lane change or turning.<br>"+
+Wear your seat belt to increase your chances of staying safe in an accident.<br>"+
+Follow traffic signals and come to a complete stop at stop signs and red lights.<br>"+
+Do not text and drive as it is never acceptable to send text messages when operating a motor vehicle.<br>"+
+Obey speed limits as they are carefully selected to maximize safety for drivers and others.<br>"+
+Make adjustments for weather conditions such as rain, snow, or fog by using extra precautions when driving.<br>"+
+Exercise patience and avoid rushing as many accidents are caused by impatient drivers.</html>"
+
+
+
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.jar.Attributes.Name;
+
+public class DrivingSchool {
+
+    public static void main(String[] args) {
+
+        JFrame frame = new JFrame("ROAD SENSE");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(800, 800);
+
+        JTabbedPane tabbedPane = new JTabbedPane();
+
+        // home panel
+        JPanel homePanel = new JPanel();
+        homePanel.add(new JLabel("One stop solution to learn driving"));
+        homePanel.add(new JLabel(""));
+        tabbedPane.addTab("Home", homePanel);
+
+        // Must know facts panel
+        JPanel factsPanel = new JPanel();
+        factsPanel.add(new JLabel("Must know facts:"));
+        factsPanel.add(new JLabel("- Fact 1"));
+        factsPanel.add(new JLabel("- Fact 2"));
+        tabbedPane.addTab("Must Know Facts", factsPanel);
+
+        // Good practices panel
+        JPanel practicesPanel = new JPanel();
+        practicesPanel.add(new JLabel("Good practices:"));
+        practicesPanel.add(new JLabel("- Practice 1"));
+        practicesPanel.add(new JLabel("- Practice 2"));
+        tabbedPane.addTab("Good Practices", practicesPanel);
+
+        // License instructions panel
+        JPanel licensePanel = new JPanel();
+        String descriptionText = ("<html>Visit the website parivahan.gov.in<br>" +
+                "Select the Online Services tab and click on the Driving Licence Related Services option.<br>" +
+                "Select the state from which you wish to apply.<br>" +
+                "Click on the Apply for Driving Licence option.<br>" +
+                "Complete the applicant details.<br>" +
+                "Upload scanned copies of the necessary documents.<br>" +
+                "Pay the application fee.<br>" +
+                "You can also apply for a driving license through offline mode by visiting your nearest<br>"
+                + "Regional Transport Office (RTO) and submitting the required documentation.</html>");
+        JLabel descriptionLabel = new JLabel(descriptionText, null, 0);
+        descriptionLabel.setFont(new Font("Arial", Font.PLAIN, 16));
+        descriptionLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        descriptionLabel.setAlignmentX(10);
+        licensePanel.add(descriptionLabel);
+        tabbedPane.addTab("License Instructions", licensePanel);
+
+        // Quizzes and games panel
+        JPanel quizzesPanel = new JPanel();
+        quizzesPanel.add(new JLabel("Quizzes and games:"));
+        quizzesPanel.add(new JButton("Start Quiz"));
+        quizzesPanel.add(new JButton("Play Game"));
+        tabbedPane.addTab("Quizzes and Games", quizzesPanel);
+
+        // Garage manager panel
+        JPanel garagePanel = new JPanel();
+        garagePanel.setLayout(new BorderLayout());
+        garagePanel.add(new JLabel("Garage Manager:"), BorderLayout.NORTH);
+        String[] columnNames = { "Vehicle", "Make", "Model", "Year" };
+        Object[][] data = {
+                { "Car", "Honda", "Civic", "2020" },
+                { "Motorcycle", "Yamaha", "R1", "2019" }
+        };
+        JTable table = new JTable(data, columnNames);
+        garagePanel.add(new JScrollPane(table), BorderLayout.CENTER);
+        garagePanel.add(new JButton("Add Vehicle"), BorderLayout.SOUTH);
+        tabbedPane.addTab("Garage Manager", garagePanel);
+
+        // image addition
+        JLabel logo = new JLabel(new ImageIcon(ClassLoader.getSystemResource("Background2.jpeg")));
+        logo.setBounds(0, 0, 800, 800);
+        frame.add(logo);
+
+        frame.add(tabbedPane);
+        frame.setVisible(true);
+        // frame.setLayout(800, 800);
+    }
+}
+
+
+**************************************************************************************************************************
+
+
+{ "When out at night, what should you wear to be seen easily by traffic?", "Dark coloured clothes",
+                        "Bright flourescent clothes", "Pale coloured clothes", "Trendy Clothes" },
+                { "When is it safe to cross at a zebra crossing?", "When the traffic on both sides has slowed down",
+                        "When the traffic on one side has stopped", "When the traffic on both sides has stopped",
+                        "When thetraffic on one side has slowed down " },
+                { "If you are travelling in a lane that has a left-turn arrow marked on the road, can you drive straight ahead?",
+                        "Yes", "No", "Maybe", "it's driver's choice" }
+
+
+
+{"Bright flourescent clothes", "When the traffic on one side has stopped", "No" }
+
+
+new JButton("Start Quiz")
+
