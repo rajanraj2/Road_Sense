@@ -1,7 +1,3 @@
-Here's the updated README with the **Garage Manager** feature included:  
-
----
-
 # Road Sense - One stop solution to learn driving
 
 **Road Sense** is a Java-based educational application designed to enhance road safety awareness through interactive learning modules and quizzes. The project includes a **Quiz Game**, a **Driving School**, and a **Garage Manager** module to educate users about traffic rules, safe driving practices, and vehicle management.  
