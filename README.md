@@ -36,7 +36,7 @@ Here's the updated README with the **Garage Manager** feature included:
 ### Clone the Repository  
 ```sh
 git clone https://github.com/rajanraj2/Road_Sense.git
-cd Road-Sense
+cd Road_Sense
 ```  
 
 ### Compile the Code  
